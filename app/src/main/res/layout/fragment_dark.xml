@@ -9,8 +9,10 @@
         android:id="@+id/tvFragmentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is Fragment 2"
+        android:text="This is screen 2: click here to watch now"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:layout_centerInParent="true"/>
+
+
 </RelativeLayout>
