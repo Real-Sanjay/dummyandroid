@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <!-- Adding Toolbar -->
     <androidx.appcompat.widget.Toolbar
@@ -14,43 +17,103 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
+
+    <Button
+        android:id="@+id/buttonDatabaseCrud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:background="#B24343"
+        android:onClick="redirectToDatabaseCrudActivity"
+        android:text="Register" />
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"> <!-- Adjusted to be below the toolbar -->
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/tvClickToWatch"
-        android:layout_width="234dp"
-        android:layout_height="87dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="271dp"
-        android:clickable="true"
-        android:onClick="redirectToSecondActivity"
-        android:text="Click here to watch KGF3"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="385dp"
-        android:layout_height="87dp"
-        android:layout_above="@+id/tvClickToWatch"
+        android:layout_height="203dp"
+        android:layout_above="@+id/button"
+        android:layout_below="@id/buttonDatabaseCrud"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="20dp"
-        android:text="Download KGF-3 the ice of fire  by clicking below link:"
-        android:textColor="#E91E63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="207dp"
+        android:background="#F1EEEE">
+
+        <!-- Place other UI components or adjust as needed -->
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="21dp"
+        android:text="Download KGF-3: The Ice of Fire by clicking the image below:"
+        android:textColor="#000000"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvClickToWatch"
+        android:layout_width="402dp"
+        android:layout_height="179dp"
+        android:layout_above="@+id/buttonDatabaseCrud"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="124dp"
+        android:clickable="true"
+        android:onClick="redirectToSecondActivity"
+        android:text="."
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Quality" />
+
+    <Button
+        android:id="@+id/buttonOpenMap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonDatabaseCrud"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="249dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="redirectToSecondActivity2"
+        android:text="Send Message" />
+
+    <Button
+        android:id="@+id/buttonOpenMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonDatabaseCrud"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="openMapsActivity"
+        android:text="Open Maps" />
+
 
 </RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="395dp"
+        android:layout_height="83dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="394dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="380dp"
+        android:layout_height="99dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:onClick="createRecord"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCreate"
+        android:layout_marginTop="8dp"
+        android:onClick="readRecord"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRead"
+        android:layout_marginTop="8dp"
+        android:onClick="updateRecord"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUpdate"
+        android:layout_marginTop="8dp"
+        android:onClick="deleteRecord"
+        android:text="Delete" />
+
+</RelativeLayout>
